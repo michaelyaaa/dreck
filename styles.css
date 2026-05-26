@@ -214,6 +214,21 @@ button {
   user-select: none;
 }
 
+/* Hero intro copy — overlaid to the right of the (baked-in) Hello sticker */
+.intro {
+  position: absolute;
+  top: 13.5%;
+  left: 48.5%;
+  width: 24%;
+  margin: 0;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: clamp(12px, 1.1vw, 22px);
+  line-height: 1.4;
+  color: #000;
+  z-index: 2;
+}
+
 /* -----------------------------------------------------------
    Sticker buttons — torn-paper label PNGs used as anchors.
    Position with inline --x / --y (centre point) and --w (width,
