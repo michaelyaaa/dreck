@@ -549,7 +549,7 @@ button {
 
   /* sticker text sized for the 375 viewport */
   .sticker {
-    font-size: clamp(13px, 3.8vw, 17px);
+    font-size: clamp(13px, 5vw, 26px);
   }
 
   /* board buttons: thinner border at mobile scale */
@@ -560,10 +560,10 @@ button {
 
   /* hero intro copy — full width below the (baked-in) Hello sticker */
   .intro {
-    top: 13.5%;
-    left: 5.5%;
-    width: 89%;
-    font-size: 13px;
+    top: 16.5%;
+    left: 14.5%;
+    width: 80%;
+    font-size: 18px;
     line-height: 1.45;
   }
 
