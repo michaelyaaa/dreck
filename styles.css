@@ -223,7 +223,7 @@ button {
   position: absolute;
   left: var(--x, 50%);
   top: var(--y, 50%);
-  transform: translate(-50%, -50%) rotate(var(--rot, 0deg));
+  transform: translate(-50%, -50%);
   width: var(--w, 14%);
   display: grid;
   place-items: center;
@@ -232,7 +232,7 @@ button {
   background-size: 100% 100%;
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(12px, 1vw, 21px);
+  font-size: clamp(12px, 33px, 48px);
   letter-spacing: 0.01em;
   color: #111;
   text-align: center;
@@ -242,14 +242,32 @@ button {
   will-change: transform;
 }
 
-.sticker:hover {
-  transform: translate(-50%, -50%) rotate(var(--rot, 0deg)) scale(1.04);
+/* flat (no tilt) by default; tilt + lift only on hover */
+.sticker:not(.sticker--board):hover {
+  transform: translate(-50%, -50%) rotate(-3deg) scale(1.04);
 }
 
 .sticker--green  { background-image: url('assets/button green.png');  aspect-ratio: 587 / 282; }
 .sticker--orange { background-image: url('assets/button orange.png'); aspect-ratio: 445 / 218; }
 .sticker--white  { background-image: url('assets/button white.png');  aspect-ratio: 380 / 186; }
 .sticker--yellow { background-image: url('assets/button yellow.png'); aspect-ratio: 307 / 130; }
+
+/* Board buttons — flat CSS label (cream fill, red border), not a sticker image */
+.sticker--board {
+  width: auto;
+  white-space: nowrap;
+  background: #f5efe0;
+  border: 10px solid #F01919;
+  border-radius: 2px;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.5em 1.1em 0.55em;
+}
+
+.sticker--board:hover {
+  opacity: 0.6;
+}
 
 /* =========================================================
    FOOTER
