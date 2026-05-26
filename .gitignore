@@ -1,0 +1,11 @@
+# Dev / verification artifacts
+_dev_screens/
+*.log
+
+# Stale assets from the earlier element-based build
+assets_old/
+
+# Editor / tooling
+.claude/
+.DS_Store
+Thumbs.db

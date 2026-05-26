@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dreck — contact</title>
+  <meta name="description" content="Get in touch with Doron Malki / Dreck Design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Montserrat:wght@500;700&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ====================== NAVBAR ====================== -->
+  <header class="nav" role="banner">
+    <a class="nav__brand" href="index.html" aria-label="dreck home">
+      <img class="nav__brand-icon" src="assets/Foreground.svg" alt="" />
+      <span class="nav__brand-text">dreck</span>
+    </a>
+
+    <nav class="nav__nav" aria-label="Primary">
+      <ul class="nav__links">
+        <li><a href="index.html">Shop</a></li>
+        <li><a href="contact.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M3 6h18M3 12h18M3 18h18" />
+      </svg>
+    </button>
+  </header>
+
+  <!-- mobile nav overlay -->
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <button class="mobile-nav__close" id="navClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 6l12 12M18 6L6 18" />
+      </svg>
+    </button>
+    <ul class="mobile-nav__list">
+      <li><a href="index.html">Shop</a></li>
+      <li><a href="contact.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <main class="contact site">
+    <section class="contact__stage" aria-label="Contact">
+      <img class="contact__img" src="assets/1920%20contact.jpg" alt="Doron Malki — Dreck Design" />
+
+      <div class="contact__body">
+<strong>Dreck Design</strong>
+Doron Malki
+Tel Aviv, Israel
+
+For collaborations, commissions, custom sizes, framed editions, or just to say hello:
+<a href="mailto:doron.malki@gmail.com">doron.malki@gmail.com</a>
+
+All artworks, graphics, boards, posters, typography, and visual content displayed on this website are original works by Doron Malki / Dreck Design unless stated otherwise.
+
+No corporate nonsense.
+Just art, movement, experiments, and things worth sharing.
+
+<strong>Built independently — Made with intention.</strong>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <h2 class="footer__headline">Be Brave. Clench Fists</h2>
+      <p class="footer__tagline">Alongside my own work, I also share artists, friends, and independent projects that inspire me.</p>
+
+      <div class="footer__brands">
+        <img src="assets/logo_thrash_1.png" alt="Thrash Addiction" class="brand--thrash" />
+        <img src="assets/klinikalogo__1.png" alt="Klinika" class="brand--klinika" />
+      </div>
+
+      <hr class="footer__divider" />
+
+      <div class="footer__bottom">
+        <div class="footer__logo">
+          <img src="assets/Foreground.svg" alt="dreck" />
+        </div>
+        <p class="footer__copy">© 2026 dreck design. All Rights Reserved.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook"><img src="assets/facebook_social.svg" alt="" /></a>
+          <a href="#" aria-label="Instagram"><img src="assets/Insta_social.svg" alt="" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>

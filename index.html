@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dreck — shop</title>
+  <meta name="description" content="dreck. Original posters, skateboards, t-shirts and visual work by Doron Malki." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Montserrat:wght@500;700&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ====================== NAVBAR ====================== -->
+  <header class="nav" role="banner">
+    <a class="nav__brand" href="index.html" aria-label="dreck home">
+      <img class="nav__brand-icon" src="assets/Foreground.svg" alt="" />
+      <span class="nav__brand-text">dreck</span>
+    </a>
+
+    <nav class="nav__nav" aria-label="Primary">
+      <ul class="nav__links">
+        <li><a href="index.html" aria-current="page">Shop</a></li>
+        <li><a href="contact.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M3 6h18M3 12h18M3 18h18" />
+      </svg>
+    </button>
+  </header>
+
+  <!-- mobile nav overlay -->
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <button class="mobile-nav__close" id="navClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 6l12 12M18 6L6 18" />
+      </svg>
+    </button>
+    <ul class="mobile-nav__list">
+      <li><a href="index.html">Shop</a></li>
+      <li><a href="contact.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ====================== SHOP (parts 1–8) ======================
+       Each section = one full-bleed JPG + sticker-button anchors.
+       Tweak a button by editing its inline --x (centre x), --y
+       (centre y) and --w (width) — all % of that part. -->
+  <main class="shop site" id="top">
+
+    <!-- part 1 — hero / "eternal love" poster -->
+    <section class="part" aria-label="Eternal Love poster">
+      <img class="part__img" src="assets/part%201.jpg" alt="Doron Malki holding the Eternal Love poster" />
+      <a class="sticker sticker--green" href="#" style="--x:50%; --y:88%; --w:16%; --rot:-2deg;">Buy Poster</a>
+    </section>
+
+    <!-- part 2 — arms / "HEART" poster -->
+    <section class="part" aria-label="Heart poster">
+      <img class="part__img" src="assets/part%202.jpg" alt="Heart poster — arms in the clouds" />
+      <a class="sticker sticker--green" href="#" style="--x:40%; --y:84%; --w:15%; --rot:1.5deg;">Buy Poster</a>
+    </section>
+
+    <!-- part 3 — Renaissance Romance skateboard -->
+    <section class="part" aria-label="Renaissance Romance board">
+      <img class="part__img" src="assets/part%203.jpg" alt="Renaissance Romance skateboard" />
+      <a class="sticker sticker--orange" href="#" style="--x:38%; --y:54%; --w:15%; --rot:-2deg;">Get Board</a>
+    </section>
+
+    <!-- part 4 — Once Were Warriorz skateboard -->
+    <section class="part" aria-label="Once Were Warriorz board">
+      <img class="part__img" src="assets/part%204.jpg" alt="Once Were Warriorz skateboard" />
+      <a class="sticker sticker--orange" href="#" style="--x:18%; --y:90%; --w:15%; --rot:2deg;">Get Board</a>
+    </section>
+
+    <!-- part 5 — BURNT poster -->
+    <section class="part" aria-label="Burnt poster">
+      <img class="part__img" src="assets/part%205.jpg" alt="Burnt poster" />
+      <a class="sticker sticker--green" href="#" style="--x:62%; --y:88%; --w:16%; --rot:-1.5deg;">Buy Poster</a>
+    </section>
+
+    <!-- part 6 — surfboards + Shoshana shirt -->
+    <section class="part" aria-label="Surfboards and Shoshana shirt">
+      <img class="part__img" src="assets/part%206.jpg" alt="Two surfboards and the Shoshana shirt" />
+      <a class="sticker sticker--white" href="#" style="--x:25%; --y:43%; --w:14%; --rot:-2deg;">Get Board</a>
+      <a class="sticker sticker--yellow" href="#" style="--x:68%; --y:88%; --w:13%; --rot:2deg;">Buy Shirt</a>
+    </section>
+
+    <!-- part 7 — sacred geometry tattoo poster -->
+    <section class="part" aria-label="Sacred geometry poster">
+      <img class="part__img" src="assets/part%207.jpg" alt="Sacred geometry tattoo poster" />
+      <a class="sticker sticker--green" href="#" style="--x:30%; --y:62%; --w:15%; --rot:1.5deg;">Buy Poster</a>
+    </section>
+
+    <!-- part 8 — "Hail" poster -->
+    <section class="part" aria-label="Hail poster">
+      <img class="part__img" src="assets/part%208.jpg" alt="Hail poster" />
+      <a class="sticker sticker--green" href="#" style="--x:50%; --y:92%; --w:16%; --rot:-2deg;">Buy Poster</a>
+    </section>
+
+  </main>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <h2 class="footer__headline">Be Brave. Clench Fists</h2>
+      <p class="footer__tagline">Alongside my own work, I also share artists, friends, and independent projects that inspire me.</p>
+
+      <div class="footer__brands">
+        <img src="assets/logo_thrash_1.png" alt="Thrash Addiction" class="brand--thrash" />
+        <img src="assets/klinikalogo__1.png" alt="Klinika" class="brand--klinika" />
+      </div>
+
+      <hr class="footer__divider" />
+
+      <div class="footer__bottom">
+        <div class="footer__logo">
+          <img src="assets/Foreground.svg" alt="dreck" />
+        </div>
+        <p class="footer__copy">© 2026 dreck design. All Rights Reserved.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook"><img src="assets/facebook_social.svg" alt="" /></a>
+          <a href="#" aria-label="Instagram"><img src="assets/Insta_social.svg" alt="" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>
