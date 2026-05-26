@@ -425,11 +425,69 @@ button {
 }
 
 /* =========================================================
-   RESPONSIVE — 1440 needs no overrides (artboard scales fluidly)
+   RESPONSIVE — 1440
+   Below 1920 the artboard scales down, but the buttons' fixed px
+   font-sizes don't, so they read too large. These overrides retune
+   button size/position for the 1440 range. Inline `style` wins over
+   the stylesheet, so the values need !important; bounded at 769px so
+   they never reach the mobile layout.
    ========================================================= */
 @media (max-width: 1440px) {
   .nav {
     padding: 0 clamp(14px, 1.5vw, 28px);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+  /* part 1 — Buy Poster */
+  .shop .part:nth-of-type(1) .sticker {
+    --w: 31% !important;
+    font-size: 28px !important;
+  }
+  /* part 2 — Get This */
+  .shop .part:nth-of-type(2) .sticker {
+    --w: 31% !important;
+    font-size: 30px !important;
+  }
+  /* part 3 — Get Board (CSS button) */
+  .shop .part:nth-of-type(3) .sticker {
+    --x: 70.5% !important;
+    --y: 83% !important;
+    font-size: 24px !important;
+  }
+  /* part 4 — Get Board (CSS button) */
+  .shop .part:nth-of-type(4) .sticker {
+    --x: 46% !important;
+    --y: 79% !important;
+    font-size: 24px !important;
+  }
+  /* part 5 — Buy Poster */
+  .shop .part:nth-of-type(5) .sticker {
+    --w: 24% !important;
+    font-size: 22px !important;
+  }
+  /* part 6 — left board / right board / shirt */
+  .shop .part:nth-of-type(6) .sticker--yellow {
+    --w: 21% !important;
+    font-size: 25px !important;
+  }
+  .shop .part:nth-of-type(6) .sticker--green {
+    --w: 23% !important;
+    font-size: 27px !important;
+  }
+  .shop .part:nth-of-type(6) .sticker--white {
+    --w: 25% !important;
+    font-size: 30px !important;
+  }
+  /* part 7 — Buy Poster */
+  .shop .part:nth-of-type(7) .sticker {
+    --w: 25% !important;
+    font-size: clamp(12px, 22px, 48px) !important;
+  }
+  /* part 8 — Must Have */
+  .shop .part:nth-of-type(8) .sticker {
+    --w: 36% !important;
+    font-size: 32px !important;
   }
 }
 
