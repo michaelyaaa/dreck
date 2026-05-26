@@ -39,7 +39,7 @@
       </svg>
     </button>
     <ul class="mobile-nav__list">
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html">Shop</a></li>
       <li><a href="contact.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -49,7 +49,10 @@
        Each section = one full-bleed JPG + sticker-button anchors.
        Tweak a button by editing its inline --x (centre x), --y
        (centre y) and --w (width) — all % of that part. -->
-  <main class="shop site" id="top">
+  <main class="site" id="top">
+
+    <!-- ===== DESKTOP / 1440 shop (8 parts) ===== -->
+    <div class="shop shop--desktop">
 
     <!-- part 1 — hero / "eternal love" poster -->
     <section class="part" aria-label="Eternal Love poster">
@@ -101,6 +104,69 @@
       <img class="part__img" src="assets/part%208.jpg" alt="Hail poster" />
       <a class="sticker sticker--green" href="#" style="--x:53%; --y:85%; --w:27%; font-size:48px;">Must Have</a>
     </section>
+
+    </div><!-- /.shop--desktop -->
+
+    <!-- ===== MOBILE shop (9 parts, different split) ===== -->
+    <div class="shop shop--mobile">
+
+      <!-- m1 — hero: Eternal Love poster + Heart/arms -->
+      <section class="part" aria-label="Eternal Love poster">
+        <img class="part__img" src="assets/part%201%20mobile.jpg" alt="Doron Malki holding the Eternal Love poster" />
+        <p class="intro">I’m Doron Malki, a graphic designer and artist shaped by surf, music, movement, and the visual noise of the city.<br />My work moves between design and art, between image and object, between something you look at and something you live with.<br />Through posters, boards, type, and visual experiments, I create pieces that carry memory, attitude, and emotion.</p>
+        <a class="sticker sticker--green" href="#" style="--x:50%; --y:43%; --w:60%;">Buy Poster</a>
+        <a class="sticker sticker--green" href="#" style="--x:50%; --y:93%; --w:60%;">Get This</a>
+      </section>
+
+      <!-- m2 — Renaissance Romance board -->
+      <section class="part" aria-label="Renaissance Romance board">
+        <img class="part__img" src="assets/part%202%20mobile.jpg" alt="Renaissance Romance skateboard" />
+        <a class="sticker sticker--board" href="#" style="--x:50%; --y:88%;">Get Board</a>
+      </section>
+
+      <!-- m3 — Once Were Warriorz / What Is Love board -->
+      <section class="part" aria-label="Once Were Warriorz board">
+        <img class="part__img" src="assets/part%203%20mobile.jpg" alt="Once Were Warriorz — What Is Love skateboard" />
+        <a class="sticker sticker--board" href="#" style="--x:30%; --y:90%;">Get Board</a>
+      </section>
+
+      <!-- m4 — BURNT poster -->
+      <section class="part" aria-label="Burnt poster">
+        <img class="part__img" src="assets/part%204%20mobile.jpg" alt="Burnt poster" />
+        <a class="sticker sticker--green" href="#" style="--x:50%; --y:88%; --w:72%;">Buy Poster</a>
+      </section>
+
+      <!-- m5 — KILL surfboard -->
+      <section class="part" aria-label="Surfboard">
+        <img class="part__img" src="assets/part%205%20mobile.jpg" alt="Surfboard" />
+        <a class="sticker sticker--yellow" href="#" style="--x:50%; --y:90%; --w:72%;">Buy Board</a>
+      </section>
+
+      <!-- m6 — woman surfboard -->
+      <section class="part" aria-label="Surfboard">
+        <img class="part__img" src="assets/part%206%20mobile.jpg" alt="Surfboard" />
+        <a class="sticker sticker--green" href="#" style="--x:38%; --y:88%; --w:55%;">Buy Board</a>
+      </section>
+
+      <!-- m7 — Shoshana shirt -->
+      <section class="part" aria-label="Shoshana shirt">
+        <img class="part__img" src="assets/part%207%20mobile.jpg" alt="Shoshana shirt" />
+        <a class="sticker sticker--white" href="#" style="--x:50%; --y:78%; --w:50%;">Buy Shirt</a>
+      </section>
+
+      <!-- m8 — sacred geometry poster -->
+      <section class="part" aria-label="Sacred geometry poster">
+        <img class="part__img" src="assets/part%208%20mobile.jpg" alt="Sacred geometry tattoo poster" />
+        <a class="sticker sticker--orange" href="#" style="--x:50%; --y:52%; --w:60%;">Buy Poster</a>
+      </section>
+
+      <!-- m9 — Hail poster -->
+      <section class="part" aria-label="Hail poster">
+        <img class="part__img" src="assets/part%209%20mobile.jpg" alt="Hail poster" />
+        <a class="sticker sticker--green" href="#" style="--x:38%; --y:80%; --w:55%;">Must Have</a>
+      </section>
+
+    </div><!-- /.shop--mobile -->
 
   </main>
 

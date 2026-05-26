@@ -201,6 +201,11 @@ button {
   font-size: 0; /* kill whitespace gaps between stacked images */
 }
 
+/* Desktop/1440 vs mobile shop swap (mobile parts split differently) */
+.shop--mobile {
+  display: none;
+}
+
 .part {
   position: relative;
   width: 100%;
@@ -455,63 +460,83 @@ button {
 
 @media (min-width: 769px) and (max-width: 1440px) {
   /* part 1 — Buy Poster */
-  .shop .part:nth-of-type(1) .sticker {
+  .shop--desktop .part:nth-of-type(1) .sticker {
     --w: 31% !important;
     font-size: 28px !important;
   }
   /* part 2 — Get This */
-  .shop .part:nth-of-type(2) .sticker {
+  .shop--desktop .part:nth-of-type(2) .sticker {
     --w: 31% !important;
     font-size: 30px !important;
   }
   /* part 3 — Get Board (CSS button) */
-  .shop .part:nth-of-type(3) .sticker {
+  .shop--desktop .part:nth-of-type(3) .sticker {
     --x: 70.5% !important;
     --y: 83% !important;
     font-size: 24px !important;
   }
   /* part 4 — Get Board (CSS button) */
-  .shop .part:nth-of-type(4) .sticker {
+  .shop--desktop .part:nth-of-type(4) .sticker {
     --x: 46% !important;
     --y: 79% !important;
     font-size: 24px !important;
   }
   /* part 5 — Buy Poster */
-  .shop .part:nth-of-type(5) .sticker {
+  .shop--desktop .part:nth-of-type(5) .sticker {
     --w: 24% !important;
     font-size: 22px !important;
   }
   /* part 6 — left board / right board / shirt */
-  .shop .part:nth-of-type(6) .sticker--yellow {
+  .shop--desktop .part:nth-of-type(6) .sticker--yellow {
     --w: 21% !important;
     font-size: 25px !important;
   }
-  .shop .part:nth-of-type(6) .sticker--green {
+  .shop--desktop .part:nth-of-type(6) .sticker--green {
     --w: 23% !important;
     font-size: 27px !important;
   }
-  .shop .part:nth-of-type(6) .sticker--white {
+  .shop--desktop .part:nth-of-type(6) .sticker--white {
     --w: 25% !important;
     font-size: 30px !important;
   }
   /* part 7 — Buy Poster */
-  .shop .part:nth-of-type(7) .sticker {
+  .shop--desktop .part:nth-of-type(7) .sticker {
     --w: 25% !important;
     font-size: clamp(12px, 22px, 48px) !important;
   }
   /* part 8 — Must Have */
-  .shop .part:nth-of-type(8) .sticker {
+  .shop--desktop .part:nth-of-type(8) .sticker {
     --w: 36% !important;
     font-size: 32px !important;
   }
 }
 
 /* =========================================================
-   MOBILE (<= 768) — placeholder until mobile part images land
+   MOBILE (<= 768)
    ========================================================= */
 @media (max-width: 768px) {
   :root {
     --nav-h: 64px;
+  }
+
+  /* swap shop: hide the desktop split, show the 9-part mobile split */
+  .shop--desktop {
+    display: none;
+  }
+
+  .shop--mobile {
+    display: block;
+  }
+
+  /* navbar: logo left, hamburger right (per mobile design) */
+  .nav__nav {
+    grid-column: 1;
+    justify-self: start;
+  }
+
+  .nav__logo img {
+    width: 46px;
+    height: 46px;
   }
 
   .nav__links {
@@ -522,14 +547,37 @@ button {
     display: flex;
   }
 
-  /* sticker text shrinks with the narrower viewport */
+  /* sticker text sized for the 375 viewport */
   .sticker {
-    font-size: clamp(10px, 2.6vw, 16px);
+    font-size: clamp(13px, 3.8vw, 17px);
+  }
+
+  /* board buttons: thinner border at mobile scale */
+  .sticker--board {
+    border-width: 4px;
+    letter-spacing: 0.04em;
+  }
+
+  /* hero intro copy — full width below the (baked-in) Hello sticker */
+  .intro {
+    top: 13.5%;
+    left: 5.5%;
+    width: 89%;
+    font-size: 13px;
+    line-height: 1.45;
   }
 
   /* Footer mobile */
   .footer {
     padding: 60px 24px 40px;
+  }
+
+  /* headline wraps to two lines (Be Brave. / Clench Fists) */
+  .footer__headline {
+    font-size: 32px;
+    max-width: 7em;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .footer__bottom {
@@ -556,13 +604,12 @@ button {
     height: 24px;
   }
 
-  /* Contact mobile — drop text below the image so nothing overlaps */
+  /* Contact mobile — overlay text in the white gap of the mobile image */
   .contact__body {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: calc(100% - 40px);
-    margin: 24px 20px 40px;
-    font-size: 14px;
+    top: 27%;
+    left: 6%;
+    width: 88%;
+    font-size: 13px;
+    line-height: 1.5;
   }
 }
