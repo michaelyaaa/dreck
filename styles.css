@@ -312,6 +312,7 @@ button {
 .overlay--board2 { --ox: 25%; --oy: 50%; --ow: 20%; }  /* moon — left */
 .overlay--board1 { --ox: 50%; --oy: 50%; --ow: 20%; }  /* figure — right */
 .overlay--shirt  { --ox: 64%; --oy: 63%; --ow: 40%; }
+.overlay--burnt  { --ox: 72%; --oy: 55%; --ow: 24%; }  /* BURNT poster (part 5) */
 
 /* =========================================================
    FOOTER
@@ -583,10 +584,11 @@ button {
     letter-spacing: 0.04em;
   }
 
-  /* Mobile overlays — boards/shirt centred and sized for the 375 viewport */
+  /* Mobile overlays — boards/shirt/poster centred and sized for the 375 viewport */
   .overlay--board1 { --ox: 50%; --oy: 50%; --ow: 80%; }
   .overlay--board2 { --ox: 50%; --oy: 50%; --ow: 80%; }
   .overlay--shirt  { --ox: 50%; --oy: 35%; --ow: 100%; }
+  .overlay--burnt  { --ox: 50%; --oy: 40%; --ow: 85%; }
 
   /* hero intro copy — full width below the (baked-in) Hello sticker */
   .intro {
