@@ -5,6 +5,14 @@ _dev_screens/
 # Stale assets from the earlier element-based build
 assets_old/
 
+# Local backups of source assets (kept on disk, not tracked)
+assets/*_back.jpg
+assets/*_back.jpeg
+assets/*_back.png
+assets/*_backup.jpg
+assets/*_backup.jpeg
+assets/*_backup.png
+
 # Editor / tooling
 .claude/
 .DS_Store

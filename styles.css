@@ -289,6 +289,29 @@ button {
   opacity: 0.6;
 }
 
+/* -----------------------------------------------------------
+   Product overlays — transparent PNGs (boards, shirt) layered
+   on top of a background JPG so they can be resized/repositioned
+   independently of the baked-in background.
+   ----------------------------------------------------------- */
+.part__overlay {
+  position: absolute;
+  left: var(--ox, 50%);
+  top: var(--oy, 50%);
+  transform: translate(-50%, -50%);
+  width: var(--ow, 20%);
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Both boards sit on the LEFT half, side-by-side (moon board left,
+   figure board right). Shirt sits on the right half of part 6-2. */
+.overlay--board2 { --ox: 16%; --oy: 50%; --ow: 20%; }  /* moon — left */
+.overlay--board1 { --ox: 36%; --oy: 50%; --ow: 20%; }  /* figure — right */
+.overlay--shirt  { --ox: 64%; --oy: 50%; --ow: 22%; }
+
 /* =========================================================
    FOOTER
    ========================================================= */
@@ -486,7 +509,7 @@ button {
     --w: 24% !important;
     font-size: 22px !important;
   }
-  /* part 6 — left board / right board / shirt */
+  /* part 6 — left board / right board (top half) */
   .shop--desktop .part:nth-of-type(6) .sticker--yellow {
     --w: 21% !important;
     font-size: 25px !important;
@@ -495,17 +518,18 @@ button {
     --w: 23% !important;
     font-size: 27px !important;
   }
-  .shop--desktop .part:nth-of-type(6) .sticker--white {
+  /* part 6-2 — Shoshana shirt (bottom half) */
+  .shop--desktop .part:nth-of-type(7) .sticker--white {
     --w: 25% !important;
     font-size: 30px !important;
   }
   /* part 7 — Buy Poster */
-  .shop--desktop .part:nth-of-type(7) .sticker {
+  .shop--desktop .part:nth-of-type(8) .sticker {
     --w: 25% !important;
     font-size: clamp(12px, 22px, 48px) !important;
   }
   /* part 8 — Must Have */
-  .shop--desktop .part:nth-of-type(8) .sticker {
+  .shop--desktop .part:nth-of-type(9) .sticker {
     --w: 36% !important;
     font-size: 32px !important;
   }
