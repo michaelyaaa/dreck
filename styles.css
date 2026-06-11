@@ -245,6 +245,7 @@ button {
   top: var(--y, 50%);
   transform: translate(-50%, -50%);
   width: var(--w, 14%);
+  z-index: 2;
   display: grid;
   place-items: center;
   background-repeat: no-repeat;
@@ -308,9 +309,9 @@ button {
 
 /* Both boards sit on the LEFT half, side-by-side (moon board left,
    figure board right). Shirt sits on the right half of part 6-2. */
-.overlay--board2 { --ox: 16%; --oy: 50%; --ow: 20%; }  /* moon — left */
-.overlay--board1 { --ox: 36%; --oy: 50%; --ow: 20%; }  /* figure — right */
-.overlay--shirt  { --ox: 64%; --oy: 50%; --ow: 22%; }
+.overlay--board2 { --ox: 25%; --oy: 50%; --ow: 20%; }  /* moon — left */
+.overlay--board1 { --ox: 50%; --oy: 50%; --ow: 20%; }  /* figure — right */
+.overlay--shirt  { --ox: 64%; --oy: 63%; --ow: 40%; }
 
 /* =========================================================
    FOOTER
