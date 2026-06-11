@@ -583,6 +583,11 @@ button {
     letter-spacing: 0.04em;
   }
 
+  /* Mobile overlays — boards/shirt centred and sized for the 375 viewport */
+  .overlay--board1 { --ox: 50%; --oy: 50%; --ow: 80%; }
+  .overlay--board2 { --ox: 50%; --oy: 50%; --ow: 80%; }
+  .overlay--shirt  { --ox: 50%; --oy: 35%; --ow: 100%; }
+
   /* hero intro copy — full width below the (baked-in) Hello sticker */
   .intro {
     top: 16.5%;
