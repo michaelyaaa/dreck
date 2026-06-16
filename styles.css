@@ -290,6 +290,12 @@ button {
   opacity: 0.6;
 }
 
+/* m1-2 (Heart) is the first mobile section — crop bottom 25% off the tall background JPG */
+  .shop--desktop .part:nth-of-type(2) {
+    aspect-ratio: 375 / 400;
+    overflow: hidden;
+  }
+
 /* -----------------------------------------------------------
    Product overlays — transparent PNGs (boards, shirt) layered
    on top of a background JPG so they can be resized/repositioned
@@ -313,7 +319,7 @@ button {
 .overlay--board1 { --ox: 50%; --oy: 50%; --ow: 20%; }  /* figure — right */
 .overlay--shirt  { --ox: 64%; --oy: 63%; --ow: 40%; }
 .overlay--burnt  { --ox: 72%; --oy: 55%; --ow: 24%; }  /* BURNT poster (part 5) */
-.overlay--poster1        { --ox: 52%; --oy: 60%; --ow: 40%; }  /* Eternal Love poster (part 1) */
+.overlay--poster1        { --ox: 52%; --oy: 42%; --ow: 50%; }  /* Eternal Love poster (part 1) */
 .overlay--heart          { --ox: 50%; --oy: 50%; --ow: 40%; }  /* heart poster (part 2) */
 .overlay--board-shoshana { --ox: 70%; --oy: 45%; --ow: 17%; }  /* Renaissance Romance board (part 3) */
 .overlay--board-mati     { --ox: 18%; --oy: 73%; --ow: 17%; }  /* Once Were Warriorz board (part 4) */
@@ -590,12 +596,18 @@ button {
     letter-spacing: 0.04em;
   }
 
+  /* m1-2 (Heart) is the first mobile section — crop bottom 25% off the tall background JPG */
+  .shop--mobile .part:nth-of-type(1) {
+    aspect-ratio: 375 / 930;
+    overflow: hidden;
+  }
+
   /* Mobile overlays — boards/shirt/poster centred and sized for the 375 viewport */
   .overlay--board1 { --ox: 50%; --oy: 50%; --ow: 60%; }
   .overlay--board2 { --ox: 50%; --oy: 50%; --ow: 60%; }
   .overlay--shirt  { --ox: 50%; --oy: 35%; --ow: 100%; }
   .overlay--burnt  { --ox: 50%; --oy: 40%; --ow: 85%; }
-  .overlay--poster1        { --ox: 50%; --oy: 35%; --ow: 70%; }  /* Eternal Love poster (m1) */
+  .overlay--poster1        { --ox: 52%; --oy: 40%; --ow: 90%; }  /* Eternal Love poster (m1) */
   .overlay--heart          { --ox: 50%; --oy: 45%; --ow: 85%; }  /* heart poster (m1-2) */
   .overlay--board-shoshana { --ox: 50%; --oy: 45%; --ow: 60%; }  /* Renaissance Romance board (m2) */
   .overlay--board-mati     { --ox: 50%; --oy: 60%; --ow: 60%; }  /* Once Were Warriorz board (m3) */
