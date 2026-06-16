@@ -605,9 +605,9 @@ button {
   /* hero intro copy — full width below the (baked-in) Hello sticker */
   .intro {
     top: 16.5%;
-    left: 14.5%;
-    width: 80%;
-    font-size: 18px;
+    left: 2.5%;
+    width: 100%;
+    font-size: 12.5px;
     line-height: 1.45;
   }
 
@@ -669,10 +669,10 @@ button {
 
   /* Contact mobile — overlay text in the white gap of the mobile image */
   .contact__body {
-    top: 27%;
-    left: 6%;
-    width: 88%;
-    font-size: 13px;
+    top: 24%;
+    left: 5%;
+    width: 92%;
+    font-size: 12.5px;
     line-height: 1.5;
   }
 }
