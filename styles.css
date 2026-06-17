@@ -36,7 +36,9 @@ body {
   line-height: 1.45;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  /* `clip` clips horizontal overflow without creating a scroll container,
+     so `position: sticky` on .nav still anchors to the viewport. */
+  overflow-x: clip;
 }
 
 img,
