@@ -255,7 +255,7 @@ button {
   background-size: 100% 100%;
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(12px, 33px, 48px);
+  font-size: clamp(12px, 30px, 48px);
   letter-spacing: 0.01em;
   color: #111;
   text-align: center;
@@ -528,11 +528,11 @@ button {
   /* part 6 — left board / right board (top half) */
   .shop--desktop .part:nth-of-type(6) .sticker--yellow {
     --w: 21% !important;
-    font-size: 25px !important;
+    font-size: 22px !important;
   }
   .shop--desktop .part:nth-of-type(6) .sticker--green {
     --w: 23% !important;
-    font-size: 27px !important;
+    font-size: 22px !important;
   }
   /* part 6-2 — Shoshana shirt (bottom half) */
   .shop--desktop .part:nth-of-type(7) .sticker--white {
